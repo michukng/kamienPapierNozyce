@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamień, papier, nożyce</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/controller-1784573_960_720.png" type="image/x-icon">
+    <script defer src="js/main.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+        <h1>Kamień, papier, nożyce!</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="takeName" class="take">
+            <form id="myForm">
+                <div class="showText">
+                    <label for="myNameInput">Podaj swoje imię, aby zagrać z komputerem <br> w kamień, papier, nożyce:</label>
+                </div>
+                <div class="showText">
+                    <input type="text" id="myNameInput" maxlength="20" autofocus="on" class="textArea">
+                </div>
+                <div class="boxButton">
+                    <button type="submit" class="buttonStart">Zagraj</button>
+                    <button type="reset" class="buttonStart">Wyjdź z gry</button>
+                </div>
+            </form>
+        </section>
+        <section id="playGame" class="game">
+            <table>
+                <caption>Wybierz:</caption>
+                <thead>
+                    <tr>
+                        <td>
+                            <button id="rockChoice" class="button">Kamień</button>
+                        </td>
+                        <td>
+                            <button id="paperChoice" class="button">Papier</button>
+                        </td>
+                        <td>
+                            <button id="scissorsChoice" class="button">Nożyce</button>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+        <section id="gameResult" class="result">            
+        </section>
+        <section id="playAgain" class="result">
+            <div class="boxButton">
+                <p>Czy chcesz zagrać jeszcze raz?</p>
+                    <button id="agree" class="button">Tak</button>                
+            </div>
+        </section>
+        <section id="buttonAgree" class="result">
+            <div class="boxButton">
+            <button class="buttonPlay">Zagraj</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        
+        <p>Copyright &copy; Michał Misiek</p>
+    </footer> 
+</body>
+</html>
